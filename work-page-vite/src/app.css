@@ -1,68 +1,62 @@
-body {
-    background-color: #2d2a2a;
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: 100%;
-    height: auto;
-}
-/* Estilos para el encabezado */
 
-  
-  #title {
-    font-family: Georgia, 'Times New Roman', Times, serif;
-    font-size: 30px;
-    margin-top: 10px;
-    margin-left: 10%;
-    margin-bottom: 40px;
-    color: whitesmoke;
+
+/* Styles for the header */
+#title {
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  font-size: 4rem;
+  margin-top: 7rem;
+  color: whitesmoke;
+  margin-left: 4rem;
+}
+
+@keyframes slide-in {
+  0% { transform: translateY(-100%); opacity: 0; }
+  100% { transform: translateY(0); opacity: 1; }
+}
+
+@keyframes bounce {
+  0%, 100% {
+    transform: translateY(0);
   }
-  @keyframes slide-in {
-    0% { transform: translateY(-100%); opacity: 0; }
-    100% { transform: translateY(0); opacity: 1; }
+  50% {
+    transform: translateY(-10px);
   }
-  
-  @keyframes bounce {
-    0%, 100% {
-      transform: translateY(0);
-    }
-    50% {
-      transform: translateY(-10px);
-    }
-  }
-  
-  .slide-in {
-    animation: slide-in 1s ease-in-out;
-  }
-  
-  .pulse {
-    animation: pulse 2s infinite;
-  }
-  
-  /* Estilos adicionales para el aspecto minimalista */
-  header {
-    background-color: #f2f2f2;
-    padding: 20px;
-    text-align: center;
-  }
-  
-  h1 {
-    font-family: Arial, sans-serif;
-    font-size: 32px;
-    color: #333;
-  }
-  span {
-    color: white;
-    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-    display: inline-block;
-    margin-left: 40px;
-  }
-  
-  .container {
-    padding: 25px;
-    background-size: cover;
-  }
-.header-image{
-    background-repeat: no-repeat;
-    background-position: center;
-    position: relative;
+}
+
+.slide-in {
+  animation: slide-in 1s ease-in-out;
+}
+
+.pulse {
+  animation: pulse 2s infinite;
+}
+
+
+
+
+
+
+h5 {
+  font-family: arial;
+  color: beige;
+  font-size: medium;
+  padding: 1rem;
+
+}
+
+.title-container {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+body {
+  background-color: rgb(39, 46, 46);
+}
+span {
+  color: orange;
+  margin-left: 2rem;
+}
+.enlarged {
+  transform: scale(1.5);
+  margin-top: 7rem;
 }
