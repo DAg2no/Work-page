@@ -5,6 +5,9 @@ import { Container, Row, Col } from 'react-bootstrap';
 import image from './data/image.png';
 import './app.css';
 import inkendin from './data/In-Blue-34.png'
+import stackoverflow from './data/stackoverflow-3819627975.png'
+import github from './data/github_PNG40-3901690518.png'
+import gmail from './data/gmail-logo-circle-2-2047502769.png'
 
  
 
@@ -48,22 +51,28 @@ const Header = () => {
                 />
               </div>
             </span>
-            <div className='d-flex justify-content-center mt-3'>
+            <div className='d-flex justify-content-start mt-2 p-5'>
               <a href="https://www.linkedin.com/in/daniel-uribe-pulgar-93905a273/">
                 <button className='btn btn-light mx-2'>
-        <img src={inkendin} alt='button1' height='25'width='25'/>
+        <img src={inkendin} alt='button1' height='23'width='22'/>
       </button>
               </a>
+      <a href="https://stackoverflow.com/users/21894223/daniel-uribe?tab=profile">
+        <button className='btn btn-warning mx-2'>
+        <img src={stackoverflow} alt='button2' height='23'width='22'/>
+      </button>
+      </a>
+      <a href="https://github.com/DAg2no">
+        <button className='btn btn-light mx-2'>
+        <img src={github} alt='button3' height='23'width='22'/>
+      </button>
+      </a>
+      <a href="">
+        <button className='btn btn-dark mx-2'>
+        <img src={gmail} alt='button4' height='23' width='22'/>
+      </button>
+      </a>
       
-      <button className='btn btn-light mx-2'>
-        <img src='https://example.com/image2.png' alt='button2' height='30'width='20'/>
-      </button>
-      <button className='btn btn-light mx-2'>
-        <img src='https://example.com/image3.png' alt='button3' height='30'width='20'/>
-      </button>
-      <button className='btn btn-light mx-2'>
-        <img src='https://example.com/image4.png' alt='button4' height='30' width='20'/>
-      </button>
     </div>
 
           </Col>

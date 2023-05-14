@@ -55,6 +55,7 @@ body {
 span {
   color: orange;
   margin-left: 2rem;
+  font-size: x-large;
 }
 .enlarged {
   transform: scale(1.5);
