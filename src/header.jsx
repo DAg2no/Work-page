@@ -7,7 +7,7 @@ import "./header.css";
 import inkendin from "./data/In-Blue-34.png";
 import stackoverflow from "./data/stackoverflow-3819627975.png";
 import github from "./data/github_PNG40-3901690518.png";
-import gmail from "./data/gmail-logo-circle-2-2047502769.png";
+
 
 const Header = () => {
   useEffect(() => {
@@ -23,12 +23,11 @@ const Header = () => {
       <Navbar expand="md" variant="light" className="fixed-top">
         <Navbar.Brand>
           <span
-            className="NameBar text-light"
-            style={{ fontWeight: "normal", fontSize: "larger" }}
+            className="NameBar text-light p-3"
+            style={{ fontWeight: "normal", fontSize: "large" }}
           >
             Daniel Uribe
           </span>
-          {/* span con con la animacion de escritura */}
         </Navbar.Brand>
       </Navbar>
       <div className="header-container" id="header">
