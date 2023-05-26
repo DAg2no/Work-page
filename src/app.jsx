@@ -5,15 +5,16 @@ import Skill from "./skill.jsx";
 import "bootstrap/dist/css/bootstrap.min.css";
 
 const App = () => {
+
+    
     return (
         <Fragment>
 
-            <body data-bs-theme='dark'>
+            <body>
                 <Header/>
                 <Skill/>
             </body>
-                
-                
+                      
         </Fragment>
     );
 };
