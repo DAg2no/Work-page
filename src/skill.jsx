@@ -2,7 +2,7 @@ import React from 'react';
 import { Container, Row, Col, Card } from 'react-bootstrap';
 import laptop from './data/laptop-3214756.svg';
 import JavaScriptIcon from './data/js-icon.png';
-import BootstrapIcon from './data/bootstrap-icon.svg';
+import BootstrapIcon from './data/bootstrap-icon.png'
 import 'bootstrap/dist/css/bootstrap.min.css';
 import './skill.css';
 
@@ -22,21 +22,22 @@ const Skill = () => {
                 <Card>
                   <img src={JavaScriptIcon} alt="JS" width={30} />
                 </Card>
-                <a href="https://example.com">
-                  <button>
-                    <img src="#" alt="NaN" />
-                  </button>
-                </a>
-                <a href="https://example.com">
-                  <button>
-                    <img src="#" alt="NaN" />
-                  </button>
-                </a>
-                <a href="https://example.com">
-                  <button>
-                    <img src="#" alt="NaN" />
-                  </button>
-                </a>
+                <Card>
+                  <img src={JavaScriptIcon} alt="JS" width={30} />
+                </Card>
+                <Card>
+                  <img src={JavaScriptIcon} alt="JS" width={30} />
+                </Card>
+                <Card>
+                  <img src={JavaScriptIcon} alt="JS" width={30} />
+                </Card>
+                <Card>
+                  <img src={JavaScriptIcon} alt="JS" width={30} />
+                </Card>
+                <Card>
+                  <img src={JavaScriptIcon} alt="JS" width={30} />
+                </Card>
+                
               </div>
               <div>
                 <h4 className="text-light fw-light">Frontend</h4>
