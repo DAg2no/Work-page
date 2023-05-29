@@ -4,7 +4,7 @@ import laptop from './data/laptop-3214756.svg';
 import JavaScriptIcon from './data/js-icon.png';
 import BootstrapIcon from './data/bootstrap-icon.png'
 import 'bootstrap/dist/css/bootstrap.min.css';
-import './skill.css';
+import './section1.css';
 
 const Skill = () => {
   return (
