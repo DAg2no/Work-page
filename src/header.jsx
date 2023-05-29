@@ -94,7 +94,7 @@ const Header = () => {
                 </a>
 
                 <a
-                  href="maito:danielscrip.zsh@gmail.com"
+                  href="mailto:danielscrip.zsh@gmail.com"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="mx-2"
