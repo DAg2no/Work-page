@@ -2,7 +2,7 @@ import React from 'react';
 import { Container, Row, Col, Card } from 'react-bootstrap';
 import laptop from './data/laptop-3214756.svg';
 import JavaScriptIcon from './data/js-icon.png';
-import BootstrapIcon from './data/bootstrap-icon.png'
+import BootstrapIcon from './data/bstap5Icon.png'
 import 'bootstrap/dist/css/bootstrap.min.css';
 import './section1.css';
 
