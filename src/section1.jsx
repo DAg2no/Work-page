@@ -46,7 +46,7 @@ const Skill = () => {
                     <img src={BootstrapIcon} alt="Bootstrap" width={30} />
                   </Card>
                   <Card>
-                    <img src="#" alt="NaN" />
+                    <img src="" alt="NaN" />
                   </Card>
                   <Card>
                     <img src="#" alt="NaN" />
@@ -61,6 +61,7 @@ const Skill = () => {
                 <div className="d-flex justify-content-center">
                   <img src="#" alt="JS" />
                   <img src="#" alt="NaN" />
+                  v
                   <img src="#" alt="NaN" />
                   <img src="#" alt="NaN" />
                 </div>
