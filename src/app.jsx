@@ -10,10 +10,9 @@ const App = () => {
     return (
         <Fragment>
 
-            <body>
+           
                 <Header/>
                 <Skill/>
-            </body>
                       
         </Fragment>
     );

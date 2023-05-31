@@ -1,14 +1,25 @@
+@keyframes slide-in-animation {
+  from {
+    transform: translateX(-100%);
+    opacity: 0;
+  }
+  to {
+    transform: translateX(0%);
+    opacity: 1;
+  }
+}
+
 #title {
   font-family: "Roboto-light", Arial, Helvetica, sans-serif;
   font-size: 6rem;
   color: whitesmoke;
-  animation-name: slide-in;
+  animation-name: slide-in-animation;
   animation-duration: 1s;
   animation-timing-function: ease-in-out;
 }
 
 .slide-in {
-  animation-name: slide-in;
+  animation-name: slide-in-animation;
   animation-duration: 1s;
   animation-timing-function: ease-in-out;
 }
@@ -41,14 +52,8 @@
     display: none;
   }
 }
-/* Estilos para el tema de luz */
-.light-mode {
-  background-color: #fff;
-  color: #000;
-}
 
-body  {
-  background-color: rgb(32, 32, 37);
-  color: #000;
+body {
+  background-color: rgb(37, 37, 42);
+  color: #fff;
 }
-
