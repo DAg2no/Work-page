@@ -1,16 +1,9 @@
-import React, { useEffect, Fragment, useState } from "react";
-import Typed from "react-typed";
+import React, { Fragment, useEffect, useState } from "react";
+import { ThemeProvider, createTheme } from "@mui/material/styles";
 import "bootstrap/dist/css/bootstrap.min.css";
-import { Container, Row, Col } from "react-bootstrap";
-import { createTheme } from "@mui/material/styles";
-import { ThemeProvider } from "@mui/material/styles";
-import image from "./data/image.png";
+import { Container, Row } from "react-bootstrap";
+import NavBar from "../navbar";
 import "./header.css";
-import inkendin from "./data/In-Blue-34.png";
-import stackoverflow from "./data/stackoverflow-3819627975.png";
-import github from "./data/github_PNG40-3901690518.png";
-import gmail from "./data/gmail-logo-circle-2-2047502769.png";
-import NavBar from "./Navbar";
 
 const Header = () => {
   const [themeMode, setThemeMode] = useState("light");
