@@ -2,6 +2,8 @@ import React from "react";
 import { Navbar, Button } from "react-bootstrap";
 import Brightness4Icon from "@mui/icons-material/Brightness4";
 import Brightness7Icon from "@mui/icons-material/Brightness7";
+import "@fontsource/roboto";
+import "bootstrap/dist/css/bootstrap.min.css";
 
 const NavBar = ({ themeMode, handleThemeChange }) => {
   return (

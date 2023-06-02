@@ -1,8 +1,8 @@
 import React from 'react';
 import { Container, Row, Col, Card } from 'react-bootstrap';
-import laptop from 'public/laptop-3214756.svg';
-import JavaScriptIcon from 'public/js-icon.png';
-import BootstrapIcon from 'public/bstap5Icon.png'
+import laptop from '../../../public/laptop-3214756.svg';
+import JavaScriptIcon from '../../../public/js-icon.png';
+import BootstrapIcon from '../../../public/bstap5Icon.png'
 import 'bootstrap/dist/css/bootstrap.min.css';
 import './index.css';
 
