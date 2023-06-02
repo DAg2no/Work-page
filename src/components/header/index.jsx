@@ -1,23 +1,10 @@
-import React, { Fragment, useEffect, useState } from "react";
-import { ThemeProvider, createTheme } from "@mui/material/styles";
+import React, { Fragment, useEffect } from "react";
 import "bootstrap/dist/css/bootstrap.min.css";
 import { Container, Row } from "react-bootstrap";
-import NavBar from "../navbar";
-import "./header.css";
+import { AppBar, Toolbar, Typography } from "@mui/material";
+import "./index.css";
 
 const Header = () => {
-  const [themeMode, setThemeMode] = useState("light");
-
-  const theme = createTheme({
-    palette: {
-      mode: themeMode,
-    },
-  });
-
-  const handleThemeChange = () => {
-    setThemeMode((prevMode) => (prevMode === "light" ? "dark" : "light"));
-  };
-
   useEffect(() => {
     const header = document.getElementById("header");
     header.style.animation = "slide-in 1s ease-in-out";
@@ -28,19 +15,17 @@ const Header = () => {
 
   return (
     <Fragment>
-      <ThemeProvider theme={theme}>
-        <NavBar
-          themeMode={themeMode}
-          handleThemeChange={handleThemeChange}
-        />
-        <header className="header-container" id="header">
-          <Container>
-            <Row className="header-container">
-              
-            </Row>
-          </Container>
-        </header>
-      </ThemeProvider>
+      <header className="header-container" id="header">
+        <Container>
+          <Row className="header-container">
+            <AppBar position="static">
+              <Toolbar>
+                <Typography variant="h6">Daniel Uribe</Typography>
+              </Toolbar>
+            </AppBar>
+          </Row>
+        </Container>
+      </header>
     </Fragment>
   );
 };

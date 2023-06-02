@@ -1,10 +1,10 @@
 import React from 'react';
 import { Container, Row, Col, Card } from 'react-bootstrap';
-import laptop from './data/laptop-3214756.svg';
-import JavaScriptIcon from './data/js-icon.png';
-import BootstrapIcon from './data/bstap5Icon.png'
+import laptop from 'public/laptop-3214756.svg';
+import JavaScriptIcon from 'public/js-icon.png';
+import BootstrapIcon from 'public/bstap5Icon.png'
 import 'bootstrap/dist/css/bootstrap.min.css';
-import './section1.css';
+import './index.css';
 
 const Skill = () => {
   return (
