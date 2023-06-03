@@ -1,5 +1,14 @@
+$blanco : #f5f3f3;
+$blancosuave : #ded5d5;
+
 body {
     background-color: rgb(39, 35, 37);
+    font-family: 'roboto', sans-serif;
+    transition: .3s ease all;
+
+    &.light {
+     background: $blanco;
+    }
   }
   
   /* ----------switch ----------- */
@@ -44,4 +53,10 @@ body {
     color: #fff;
   }
   /* ----------switch ----------- */
+
+  Navbar {
+    body .light & {
+        background: $blancosuave;
+    }
+  }
   

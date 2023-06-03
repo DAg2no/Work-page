@@ -1,5 +1,10 @@
 body {
   background-color: rgb(39, 35, 37);
+  font-family: "roboto", sans-serif;
+  transition: 0.3s ease all;
+}
+body.light {
+  background: #f5f3f3;
 }
 
 /* ----------switch ----------- */
@@ -44,4 +49,7 @@ body {
   color: #fff;
 }
 
-/* ----------switch ----------- *//*# sourceMappingURL=index.css.map */
+/* ----------switch ----------- */
+body .light Navbar {
+  background: #ded5d5;
+}/*# sourceMappingURL=index.css.map */

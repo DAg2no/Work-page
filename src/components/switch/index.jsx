@@ -6,16 +6,16 @@ import "./index.css";
 const Switch = () => {
   const handleClick = () => {
     document.body.classList.toggle("light");
-    document.getElementById('switch').classList.toggle('active');
+    document.getElementById("switch").classList.toggle("active");
   };
 
   return (
     <button className="switch" id="switch" onClick={handleClick}>
       <span>
-        <Brightness4Icon />
+        <Brightness7Icon />
       </span>
       <span>
-        <Brightness7Icon />
+        <Brightness4Icon />
       </span>
     </button>
   );
