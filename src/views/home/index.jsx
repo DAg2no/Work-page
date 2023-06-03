@@ -2,14 +2,13 @@ import React from "react";
 import Header from "../../components/header";
 /* import Skill from '../../components/skill'; */
 import NavBar from "../../components/navbar";
-import './index.scss'
+
 
 
 const Home = () => {
   return (
     <>
       <NavBar />
-      
       <Header />
       {/* <Skill /> */}
     </>
