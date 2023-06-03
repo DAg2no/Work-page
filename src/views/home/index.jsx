@@ -2,7 +2,7 @@ import React from "react";
 import Header from "../../components/header";
 /* import Skill from '../../components/skill'; */
 import NavBar from "../../components/navbar";
-import './index.css'
+import './index.scss'
 
 
 const Home = () => {
