@@ -1,17 +1,19 @@
-import React from 'react';
-import Header from '../../components/header';
-import Skill from '../../components/skill';
-import NavBar from '../../components/navbar'
+import React from "react";
+import Header from "../../components/header";
+/* import Skill from '../../components/skill'; */
+import NavBar from "../../components/navbar";
+import './index.css'
 
 
 const Home = () => {
-    return (
-        <>
-            <Header />
-            <Skill />
-            <NavBar />
-        </>
-    )
+  return (
+    <>
+      <NavBar />
+      
+      <Header />
+      {/* <Skill /> */}
+    </>
+  );
 };
 
 export default Home;

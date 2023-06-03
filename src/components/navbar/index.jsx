@@ -1,24 +1,16 @@
 import React from "react";
-import { Navbar, Button } from "react-bootstrap";
-import Brightness4Icon from "@mui/icons-material/Brightness4";
-import Brightness7Icon from "@mui/icons-material/Brightness7";
-import "@fontsource/roboto";
+import { Navbar } from "react-bootstrap";
 import "bootstrap/dist/css/bootstrap.min.css";
+import ThemeToggle from "../theme/index"
 
-const NavBar = ({ themeMode, handleThemeChange }) => {
+const NavBar = () => {
   return (
-    <Navbar expand="md" variant="light" className="fixed-top">
+    <Navbar expand="md" variant="light" className="fixed-top bg-dark border-top-0 border-danger" >
       <Navbar.Brand>
-        <span
-          className="NameBar text-light p-3"
-          style={{ fontWeight: "normal", fontSize: "large" }}
-        >
+        <span style={{ fontWeight: "normal", fontSize: "large" }} className="text-light p-2">
           Daniel Uribe
         </span>
       </Navbar.Brand>
-      <Button onClick={handleThemeChange}>
-        {themeMode === "light" ? <Brightness4Icon /> : <Brightness7Icon />}
-      </Button>
     </Navbar>
   );
 };
