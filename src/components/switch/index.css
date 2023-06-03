@@ -50,6 +50,17 @@ body.light {
 }
 
 /* ----------switch ----------- */
-body .light Navbar {
-  background: #ded5d5;
+nav {
+  background: rgb(39, 35, 37);
+  display: flex;
+  transition: 0.3s ease all;
+}
+nav h2 {
+  color: #f5f3f3;
+}
+body.light nav {
+  background: #f5f3f3;
+}
+body.light nav h2 {
+  color: #101010;
 }/*# sourceMappingURL=index.css.map */

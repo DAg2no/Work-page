@@ -1,8 +1,10 @@
 $blanco : #f5f3f3;
 $blancosuave : #ded5d5;
+$negro : #101010;
+$colordefondo : rgb(39, 35, 37);
 
 body {
-    background-color: rgb(39, 35, 37);
+    background-color: $colordefondo;
     font-family: 'roboto', sans-serif;
     transition: .3s ease all;
 
@@ -54,9 +56,18 @@ body {
   }
   /* ----------switch ----------- */
 
-  Navbar {
-    body .light & {
-        background: $blancosuave;
+  nav {
+    background: $colordefondo;
+    display: flex;
+    transition: .3s ease all;
+    h2{
+      color: $blanco;
+    }
+    body.light & {
+        background: $blanco;
+        h2 {
+          color: $negro;
+        }
     }
   }
   
