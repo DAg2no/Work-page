@@ -1,0 +1,89 @@
+$blanco: #f5f3f3;
+$blancosuave: #ded5d5;
+$negro: #101010;
+$colordefondo: rgb(39, 35, 37);
+
+body {
+  background-color: $colordefondo;
+  transition: 0.3s ease all;
+
+  &.light {
+    background: $blanco;
+    h1 {
+      color: $negro;
+    }
+    .text-typing{
+      color: $negro;
+    }
+    
+  }
+}
+
+/* ----------switch ----------- */
+.switch {
+  background: #343d5b;
+  border-radius: 1000px;
+  border: none;
+  position: relative;
+  cursor: pointer;
+  display: flex;
+  outline: none;
+  &::after {
+    content: "";
+    display: block;
+    width: 30px;
+    height: 30px;
+    position: absolute;
+    background: #f1f1f1;
+    top: 0;
+    left: 0;
+    right: unset;
+    border-radius: 100px;
+    transition: 0.3s ease all;
+    box-shadow: 0px 0px 2px 2px rgba(0, 0, 0, 0.2);
+  }
+  &.active {
+    background: rgb(10, 28, 223);
+    &::after {
+      right: 0;
+      left: unset;
+    }
+  }
+}
+
+.switch span {
+  width: 25px;
+  height: 30px;
+  line-height: 30px;
+  display: block;
+  background: none;
+  color: #fff;
+}
+/* ----------switch ----------- */
+
+nav {
+  background: $colordefondo;
+  display: flex;
+  transition: 0.3s ease all;
+  h2 {
+    color: $blanco;
+  }
+  body.light & {
+    background: $blanco;
+    h2 {
+      color: $negro;
+    }
+  }
+}
+
+h1 {
+  color: $blanco;
+  font-size: 5rem;
+}
+
+.text-typing {
+  color: $blanco;
+  font-family: 'Roboto', sans-serif;
+  font-size: 2rem;
+}
+

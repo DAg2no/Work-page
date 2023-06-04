@@ -2,7 +2,7 @@ import React from "react";
 import { Navbar } from "react-bootstrap";
 import "bootstrap/dist/css/bootstrap.min.css";
 import Switch from "../switch";
-import "../switch/index.css";
+
 
 const NavBar = () => {
   return (

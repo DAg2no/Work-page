@@ -1,15 +1,20 @@
 body {
   background-color: rgb(39, 35, 37);
-  font-family: "roboto", sans-serif;
   transition: 0.3s ease all;
 }
 body.light {
   background: #f5f3f3;
 }
+body.light h1 {
+  color: #101010;
+}
+body.light .text-typing {
+  color: #101010;
+}
 
 /* ----------switch ----------- */
 .switch {
-  background: #343D5B;
+  background: #343d5b;
   border-radius: 1000px;
   border: none;
   position: relative;
@@ -23,7 +28,7 @@ body.light {
   width: 30px;
   height: 30px;
   position: absolute;
-  background: #F1F1F1;
+  background: #f1f1f1;
   top: 0;
   left: 0;
   right: unset;
@@ -33,7 +38,6 @@ body.light {
 }
 .switch.active {
   background: rgb(10, 28, 223);
-  color: #000;
 }
 .switch.active::after {
   right: 0;
@@ -63,4 +67,15 @@ body.light nav {
 }
 body.light nav h2 {
   color: #101010;
+}
+
+h1 {
+  color: #f5f3f3;
+  font-size: 5rem;
+}
+
+.text-typing {
+  color: #f5f3f3;
+  font-family: "Roboto", sans-serif;
+  font-size: 2rem;
 }/*# sourceMappingURL=index.css.map */
