@@ -68,6 +68,10 @@ nav {
   h2 {
     color: $blanco;
   }
+  .custom-icon {
+    color: $blanco;
+    font-size: large;
+  }
   body.light & {
     background: $blanco;
     h2 {

@@ -3,7 +3,6 @@ import { Navbar } from "react-bootstrap";
 import "bootstrap/dist/css/bootstrap.min.css";
 import Switch from "../switch";
 
-
 const NavBar = () => {
   return (
     <nav>
@@ -22,7 +21,6 @@ const NavBar = () => {
             </h2>
           </span>
         </Navbar.Brand>
-        <Navbar.Toggle />
         <Navbar.Collapse className="justify-content-end">
           <Navbar.Text>
             <div className="pe-4">

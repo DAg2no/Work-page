@@ -1,13 +1,12 @@
 import { useEffect } from "react";
-import { Grid, Typography, Button } from "@mui/material";
+import { Grid, Typography } from "@mui/material";
 import NavBar from "../../components/navbar";
 import Container from "@mui/material/Container";
-import GitHubIcon from "@mui/icons-material/GitHub";
-import LinkedInIcon from "@mui/icons-material/LinkedIn";
 import Typed from "react-typed";
 import "../../views/home/index.css";
+import Btn from "../btn"
 
-const HeaderSection = () => {
+const Header = () => {
   useEffect(() => {}, []);
 
   return (
@@ -36,25 +35,10 @@ const HeaderSection = () => {
                   className="text-typing"
                 />
               </span>
-              <div>
-                <Button
-                  href="#"
-                  variant="contained"
-                  startIcon={<GitHubIcon />}
-                ></Button>
-                <Button
-                  href="#"
-                  variant="contained"
-                  startIcon={<LinkedInIcon />}
-                ></Button>
-                <Button href="#" variant="contained">
-                  <img src="#" />
-                </Button>
-                <Button href="#" variant="contained">
-                  <img src="#" />
-                </Button>
-                
-              </div>
+              <Btn/>
+            </Grid>
+            <Grid item>
+              
             </Grid>
           </Grid>
         </Container>
@@ -63,4 +47,4 @@ const HeaderSection = () => {
   );
 };
 
-export default HeaderSection;
+export default Header;
