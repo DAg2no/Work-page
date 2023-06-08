@@ -38,7 +38,7 @@ const Header = () => {
               </span>
               <Btn />     
             </Grid>
-            <Hidden smDown> 
+            <Hidden lgDown> 
               <Grid item xs={12} md={7} style={{ textAlign: "center" }}>
                 <img src={landing} style={{ maxWidth: "100%" }} />
               </Grid>
