@@ -38,7 +38,7 @@ const Btn = () => {
             }}
           />
         </a>
-        <a href="#">
+        <a href="https://stackoverflow.com/users/21894223/daniel-uribe?tab=profile">
             <img
             src={stackoverflow}
             alt="stackoverflow"
@@ -57,7 +57,7 @@ const Btn = () => {
             }}
           />
         </a>
-        <a href="#">
+        <a href="https://github.com/DAg2no">
             <img
             src={github}
             alt="github"
@@ -76,7 +76,7 @@ const Btn = () => {
             }}
           />
         </a>
-        <a href="#">
+        <a href="https://www.linkedin.com/in/daniel-uribe-pulgar-93905a273/">
             <img
             src={linkedin}
             alt="linkedin"

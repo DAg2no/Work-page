@@ -1,10 +1,11 @@
 import { useEffect } from "react";
-import { Grid, Typography } from "@mui/material";
+import { Grid, Typography, Hidden } from "@mui/material";
 import NavBar from "../../components/navbar";
 import Container from "@mui/material/Container";
 import Typed from "react-typed";
 import "../../views/home/index.css";
-import Btn from "../btn"
+import Btn from "../btn";
+import landing from "../../../public/landing.png";
 
 const Header = () => {
   useEffect(() => {}, []);
@@ -13,15 +14,15 @@ const Header = () => {
     <>
       <header className="header-container" id="header">
         <NavBar />
-        <Container maxWidth="sm">
+        <Container fixed>
           <Grid
             container
             justifyContent="center"
-            style={{ marginTop: "23rem" }}
+            alignItems="center"
+            style={{ marginTop: "15rem" }}
           >
-            <Grid item>
+            <Grid item xs={12} md={5}>
               <Typography variant="h1">hi, i'm daniel</Typography>
-
               <span className="animated-typing">
                 <Typed
                   strings={[
@@ -35,11 +36,13 @@ const Header = () => {
                   className="text-typing"
                 />
               </span>
-              <Btn/>
+              <Btn />     
             </Grid>
-            <Grid item>
-              
-            </Grid>
+            <Hidden smDown> 
+              <Grid item xs={12} md={7} style={{ textAlign: "center" }}>
+                <img src={landing} style={{ maxWidth: "100%" }} />
+              </Grid>
+            </Hidden>
           </Grid>
         </Container>
       </header>
