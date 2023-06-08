@@ -2,12 +2,12 @@ import React from "react";
 import { Navbar } from "react-bootstrap";
 import "bootstrap/dist/css/bootstrap.min.css";
 import Switch from "../switch";
+import { Padding } from "@mui/icons-material";
 
 const NavBar = () => {
   return (
     <nav>
       <Navbar
-        expand="md"
         variant="light"
         className="fixed-top border-top-0 border-danger"
       >
@@ -21,13 +21,9 @@ const NavBar = () => {
             </h2>
           </span>
         </Navbar.Brand>
-        <Navbar.Collapse className="justify-content-end">
-          <Navbar.Text>
-            <div className="pe-4">
-              <Switch />
-            </div>
-          </Navbar.Text>
-        </Navbar.Collapse>
+        <div style={{ marginLeft: "auto", marginRight: "1rem" }}> 
+          <Switch />
+        </div>
       </Navbar>
     </nav>
   );
