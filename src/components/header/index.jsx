@@ -22,7 +22,9 @@ const Header = () => {
             style={{ marginTop: "15rem" }}
           >
             <Grid item xs={12} md={5}>
-              <Typography variant="h1">hi, i'm daniel</Typography>
+              <Typography variant="h1" sx={{ fontSize: { xs: "4rem", sm: "4rem", md: "6rem" } }}>
+                hi, i'm daniel
+              </Typography>
               <span className="animated-typing">
                 <Typed
                   strings={[
@@ -36,11 +38,11 @@ const Header = () => {
                   className="text-typing"
                 />
               </span>
-              <Btn />     
+              <Btn />
             </Grid>
-            <Hidden lgDown> 
+            <Hidden mdDown>
               <Grid item xs={12} md={7} style={{ textAlign: "center" }}>
-                <img src={landing} style={{ maxWidth: "100%" }} />
+                <img src={landing} style={{ maxWidth: "100%" }} alt="Landing" />
               </Grid>
             </Hidden>
           </Grid>
