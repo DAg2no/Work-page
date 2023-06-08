@@ -1,26 +1,47 @@
-import { render } from "@testing-library/react";
-import HeaderSection from "./HeaderSection";
+import React from "react";
+import { shallow } from "enzyme";
+import Header from "./Header";
+import NavBar from "../../components/navbar";
+import Btn from "../btn";
 
-describe("HeaderSection Component", () => {
-  test("renders navbar", () => {
-    const { getByTestId } = render(<HeaderSection />);
-    const navbar = getByTestId("navbar");
-    expect(navbar).toBeInTheDocument();
+describe("Header Component", () => {
+  let wrapper;
+  
+  beforeEach(() => {
+    wrapper = shallow(<Header />);
   });
-
-  test("renders header content", () => {
-    const { getByText } = render(<HeaderSection />);
-    const title = getByText(/hi, i'm daniel/i);
-    expect(title).toBeInTheDocument();
-    const typingElement = getByText(/beginner development/i);
-    expect(typingElement).toBeInTheDocument();
+  
+  it("renders without crashing", () => {
+    expect(wrapper.exists()).toBe(true);
   });
-
-  test("renders social media buttons", () => {
-    const { getByText } = render(<HeaderSection />);
-    const githubButton = getByText(/github/i);
-    expect(githubButton).toBeInTheDocument();
-    const linkedInButton = getByText(/linkedin/i);
-    expect(linkedInButton).toBeInTheDocument();
+  
+  it("contains a NavBar component", () => {
+    expect(wrapper.containsMatchingElement(<NavBar />)).toBe(true);
+  });
+  
+  it("contains a Btn component", () => {
+    expect(wrapper.containsMatchingElement(<Btn />)).toBe(true);
+  });
+  
+  it("contains a Typography component with 'hi, i'm daniel' text", () => {
+    expect(wrapper.find(Typography).contains("hi, i'm daniel")).toBe(true);
+  });
+  
+  it("contains a Typed component with 'beginner development', 'frontend developer' and 'student in frontend' strings", () => {
+    expect(wrapper.find(Typed).prop("strings")).toEqual([
+      "beginner development",
+      "frontend developer",
+      "student in frontend",
+    ]);
+  });
+  
+  it("does not show landing image on small screens", () => {
+    expect(wrapper.find({ smDown: true }).exists()).toBe(true);
+    expect(wrapper.find({ md: 7 }).exists()).toBe(false);
+  });
+  
+  it("shows landing image on medium and larger screens", () => {
+    expect(wrapper.find({ md: 7 }).exists()).toBe(true);
+    expect(wrapper.find({ smDown: true }).exists()).toBe(false);
   });
 });
