@@ -31,6 +31,7 @@ const Header = () => {
                     "beginner development",
                     "frontend developer",
                     "student in frontend",
+                    ""
                   ]}
                   typeSpeed={50}
                   backSpeed={20}
