@@ -21,7 +21,7 @@ const Header = () => {
             alignItems="center"
             style={{ marginTop: "15rem" }}
           >
-            <Grid item xs={12} md={5}>
+            <Grid item xs={10} md={7}>
               <Typography variant="h1" sx={{ fontSize: { xs: "4rem", sm: "4rem", md: "6rem" } }}>
                 hi, i'm daniel
               </Typography>
@@ -41,8 +41,8 @@ const Header = () => {
               </span>
               <Btn />
             </Grid>
-            <Hidden mdDown>
-              <Grid item xs={12} md={7} style={{ textAlign: "center" }}>
+            <Hidden lgDown>
+              <Grid item xs={12} md={5} style={{ textAlign: "center" }}>
                 <img src={landing} style={{ maxWidth: "100%" }} alt="Landing" />
               </Grid>
             </Hidden>
