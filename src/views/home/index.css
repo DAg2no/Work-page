@@ -8,9 +8,6 @@ body.light {
 body.light h1 {
   color: #101010;
 }
-body.light .text-typing {
-  color: #101010;
-}
 
 /* ----------switch ----------- */
 .switch {
@@ -80,4 +77,7 @@ h1 {
 .text-typing {
   color: #f5f3f3;
   font-family: fantasy;
+}
+body .light .text-typing .text-typing {
+  color: #101010;
 }/*# sourceMappingURL=index.css.map */

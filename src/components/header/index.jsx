@@ -1,5 +1,5 @@
 import { useEffect } from "react";
-import { Grid, Typography, Hidden } from "@mui/material";
+import { Grid, Typography, Hidden, useTheme, useMediaQuery } from "@mui/material";
 import NavBar from "../../components/navbar";
 import Container from "@mui/material/Container";
 import Typed from "react-typed";
@@ -8,6 +8,9 @@ import Btn from "../btn";
 import landing from "../../../public/landing.png";
 
 const Header = () => {
+  const theme = useTheme();
+  const isSmallScreen = useMediaQuery(theme.breakpoints.down("sm"));
+
   useEffect(() => {}, []);
 
   return (
@@ -22,28 +25,35 @@ const Header = () => {
             style={{ marginTop: "15rem" }}
           >
             <Grid item xs={10} md={7}>
-              <Typography variant="h1" sx={{ fontSize: { xs: "3rem", sm: "4rem", md: "6rem" } }}>
+              <Typography
+                variant="h1"
+                sx={{
+                  fontSize: isSmallScreen ? "3rem" : { xs: "3rem", sm: "4rem", md: "6rem" },
+                }}
+              >
                 hi, i'm daniel
               </Typography>
               <div>
-                <span className="animated-typing" >
-                <Typed
-                  strings={[
-                    "beginner development",
-                    "frontend developer",
-                    "student in frontend",
-                  ]}
-                  typeSpeed={50}
-                  backSpeed={20}
-                  loop
-                  className="text-typing"
-                  sx={{ fontSize: { xs: "3rem", sm: "4rem", md: "6rem" } }}
-                />
-              </span>
+                <span className="animated-typing">
+                  <Typed
+                    strings={[
+                      "beginner development",
+                      "frontend developer",
+                      "student in frontend",
+                    ]}
+                    typeSpeed={50}
+                    backSpeed={20}
+                    loop
+                    className="text-typing"
+                    style={{
+                      fontSize: isSmallScreen ? "20px" : "2rem",
+                    }}
+                  />
+                </span>
               </div>
               <div>
                 <Btn />
-              </div>     
+              </div>
             </Grid>
             <Hidden lgDown>
               <Grid item xs={12} md={5} style={{ textAlign: "center" }}>
