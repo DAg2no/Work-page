@@ -12,6 +12,9 @@ body {
     h1 {
       color: $negro;
     }
+    .text-typing{
+      color: $negro;
+    }
     
     
   }
@@ -85,10 +88,4 @@ h1 {
 .text-typing {
   color: $blanco;
   font-family: fantasy;
-    body .light & {
-      .text-typing{
-        color: $negro;
-      }
-      
-    }
-}
+ }
