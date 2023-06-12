@@ -62,6 +62,10 @@ nav {
 nav h2 {
   color: #f5f3f3;
 }
+nav .custom-icon {
+  color: #f5f3f3;
+  font-size: large;
+}
 body.light nav {
   background: #f5f3f3;
 }
@@ -71,11 +75,9 @@ body.light nav h2 {
 
 h1 {
   color: #f5f3f3;
-  font-size: 5rem;
 }
 
 .text-typing {
   color: #f5f3f3;
   font-family: fantasy;
-  font-size: 2rem;
 }/*# sourceMappingURL=index.css.map */

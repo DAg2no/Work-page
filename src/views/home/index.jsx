@@ -1,13 +1,13 @@
 import React from "react";
 import Header from "../../components/header";
-import SectionSkill from "../../components/skill"
+import SkillSection from "../../components/skill"
 import "./index.css"
 
 const Home = () => {
   return (
     <>
       <Header />
-      <SectionSkill /> 
+      <SkillSection /> 
     </>
   );
 };

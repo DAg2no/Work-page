@@ -22,24 +22,28 @@ const Header = () => {
             style={{ marginTop: "15rem" }}
           >
             <Grid item xs={10} md={7}>
-              <Typography variant="h1" sx={{ fontSize: { xs: "4rem", sm: "4rem", md: "6rem" } }}>
+              <Typography variant="h1" sx={{ fontSize: { xs: "3rem", sm: "4rem", md: "6rem" } }}>
                 hi, i'm daniel
               </Typography>
-              <span className="animated-typing">
+              <div>
+                <span className="animated-typing" >
                 <Typed
                   strings={[
                     "beginner development",
                     "frontend developer",
                     "student in frontend",
-                    ""
                   ]}
                   typeSpeed={50}
                   backSpeed={20}
                   loop
                   className="text-typing"
+                  sx={{ fontSize: { xs: "3rem", sm: "4rem", md: "6rem" } }}
                 />
               </span>
-              <Btn />
+              </div>
+              <div>
+                <Btn />
+              </div>     
             </Grid>
             <Hidden lgDown>
               <Grid item xs={12} md={5} style={{ textAlign: "center" }}>
