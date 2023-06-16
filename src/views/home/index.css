@@ -80,4 +80,22 @@ h1 {
 .text-typing {
   color: #f5f3f3;
   font-family: fantasy;
+}
+
+.grid-component h2 {
+  color: #f5f3f3;
+  font-family: "open sans";
+  font-weight: lighter;
+  font-size: 2.2rem;
+}
+.grid-component body .light h2 {
+  color: #101010;
+}
+
+@font-face {
+  font-family: "open sans";
+  src: url("../../../public/OpenSans-Italic-VariableFont_wdth,wght.ttf") format("truetype");
+  src: url("../../../public/OpenSans-VariableFont_wdth,wght.ttf") format("truetype");
+  font-weight: lighter;
+  font-style: normal;
 }/*# sourceMappingURL=index.css.map */
