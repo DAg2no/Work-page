@@ -17,7 +17,7 @@ const Btn = () => {
             m: 1,
           },
         }}
-      p={"1rem"}
+      marginTop={2}
       >
         <Stack direction="row" spacing={2}>
           <a href="mailto:danielscrip.zsh@gmail.com">

@@ -24,12 +24,13 @@ const HeaderSection = () => {
         }}
       >
         <Grid container>
-          <Grid item xs={12} md={6} lg={6}>
+          <Grid item xs={12} md={7} lg={6}>
             <Typography
               variant="h1"
               sx={{
                 fontSize: isSmallScreen ? "60px" : { xs: "50px", sm: "4rem", md: "6rem" },
                 overflowWrap: "break-word",
+                marginBottom: "2rem"
               }}
             >
               Hi, I'm Daniel
@@ -48,7 +49,7 @@ const HeaderSection = () => {
                   className="text-typing"
                   style={{
                     fontSize: isSmallScreen ? "20px" : "2rem",
-                    padding: "1rem",
+                    marginBottom: "3rem",
                   }}
                 />
               </span>
@@ -56,11 +57,12 @@ const HeaderSection = () => {
             <Btn />
           </Grid>
           <Hidden lgDown>
-            <Grid item xs={12} md={6} lg={6} sx={{ marginTop: "-5rem" }}>
+            <Grid item xs={12} md={6} lg={6} sx={{ marginTop: "-7rem" }}>
               <img
                 src={landing}
                 style={{ maxWidth: "100%", height: "auto" }}
                 alt="Landing"
+                width={2000}
               />
             </Grid>
           </Hidden>
