@@ -1,5 +1,11 @@
 import React, { useEffect } from "react";
-import { Grid, Typography, Hidden, useTheme, useMediaQuery } from "@mui/material";
+import {
+  Grid,
+  Typography,
+  Hidden,
+  useTheme,
+  useMediaQuery,
+} from "@mui/material";
 import NavBar from "../../components/navbar";
 import Container from "@mui/material/Container";
 import Typed from "react-typed";
@@ -14,18 +20,25 @@ const Header = () => {
   useEffect(() => {}, []);
 
   return (
-    <><NavBar />
+    <>
+      <NavBar />
       <header id="header">
-        
-        <Container  display="flex" justifyContent="flex-center" alignItems="flex-center" sx={{height: "70rem"}}>
+        <Container
+          display="flex"
+          justifyContent="flex-center"
+          alignItems="flex-center"
+          sx={{ height: "70rem" }}
+        >
           <Grid container>
             <Grid item xs={11} md={8} lg={6} xl={6}>
               <Typography
                 variant="h1"
                 p={"1rem"}
                 sx={{
-                  fontSize: isSmallScreen ? "60px" : { xs: "50px", sm: "4rem", md: "6rem" },
-                  overflowWrap: "break-word", // Evita que el título se salga de su línea
+                  fontSize: isSmallScreen
+                    ? "60px"
+                    : { xs: "50px", sm: "4rem", md: "6rem" },
+                  overflowWrap: "break-word",
                 }}
               >
                 hi, i'm daniel
@@ -49,15 +62,23 @@ const Header = () => {
                   />
                 </span>
               </div>
-              
-                <Btn
-                
-                 />
-              
+
+              <Btn />
             </Grid>
             <Hidden lgDown>
-              <Grid item xs={10} md={6} lg={5} xl={6} style={{ textAlign: "center" }}>
-                <img src={landing} style={{ maxWidth: "100%", height: "auto" }} alt="Landing" />
+              <Grid
+                item
+                xs={10}
+                md={6}
+                lg={5}
+                xl={6}
+                style={{ textAlign: "center" }}
+              >
+                <img
+                  src={landing}
+                  style={{ maxWidth: "100%", height: "auto" }}
+                  alt="Landing"
+                />
               </Grid>
             </Hidden>
           </Grid>
