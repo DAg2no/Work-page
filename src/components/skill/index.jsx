@@ -59,6 +59,7 @@ const SkillSection = () => {
               justifyContent="flex-end"
               alignItems="flex-end"
               marginTop={2}
+              marginBottom={4}
             >
               <Avatar
                 sx={{ bgcolor: lime[50], width: 50, height: 52 }}

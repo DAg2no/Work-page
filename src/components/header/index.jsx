@@ -1,91 +1,73 @@
 import React, { useEffect } from "react";
-import {
-  Grid,
-  Typography,
-  Hidden,
-  useTheme,
-  useMediaQuery,
-} from "@mui/material";
+import { Grid, Typography, useTheme, useMediaQuery, Hidden } from "@mui/material";
 import NavBar from "../../components/navbar";
 import Container from "@mui/material/Container";
 import Typed from "react-typed";
-import "../../views/home/index.css";
 import Btn from "../btn";
 import landing from "../../../public/landing.png";
 
-const Header = () => {
+const HeaderSection = () => {
   const theme = useTheme();
   const isSmallScreen = useMediaQuery(theme.breakpoints.down("sm"));
 
   useEffect(() => {}, []);
 
   return (
-    <>
+    <header>
       <NavBar />
-      <header id="header">
-        <Container
-          display="flex"
-          justifyContent="flex-center"
-          alignItems="flex-center"
-          sx={{ height: "70rem" }}
-        >
-          <Grid container>
-            <Grid item xs={11} md={8} lg={6} xl={6}>
-              <Typography
-                variant="h1"
-                p={"1rem"}
-                sx={{
-                  fontSize: isSmallScreen
-                    ? "60px"
-                    : { xs: "50px", sm: "4rem", md: "6rem" },
-                  overflowWrap: "break-word",
-                }}
-              >
-                hi, i'm daniel
-              </Typography>
-              <div>
-                <span className="animated-typing">
-                  <Typed
-                    strings={[
-                      "beginner development",
-                      "frontend developer",
-                      "student in frontend",
-                    ]}
-                    typeSpeed={50}
-                    backSpeed={20}
-                    loop
-                    className="text-typing"
-                    style={{
-                      fontSize: isSmallScreen ? "20px" : "2rem",
-                      padding: "1rem",
-                    }}
-                  />
-                </span>
-              </div>
-
-              <Btn />
-            </Grid>
-            <Hidden lgDown>
-              <Grid
-                item
-                xs={10}
-                md={6}
-                lg={5}
-                xl={6}
-                style={{ textAlign: "center" }}
-              >
-                <img
-                  src={landing}
-                  style={{ maxWidth: "100%", height: "auto" }}
-                  alt="Landing"
+      <Container
+        sx={{
+          display: "flex",
+          justifyContent: "center",
+          alignItems: "center",
+          minHeight: "70rem",
+        }}
+      >
+        <Grid container>
+          <Grid item xs={12} md={6} lg={6}>
+            <Typography
+              variant="h1"
+              sx={{
+                fontSize: isSmallScreen ? "60px" : { xs: "50px", sm: "4rem", md: "6rem" },
+                overflowWrap: "break-word",
+              }}
+            >
+              Hi, I'm Daniel
+            </Typography>
+            <div>
+              <span className="animated-typing">
+                <Typed
+                  strings={[
+                    "beginner development",
+                    "frontend developer",
+                    "student in frontend",
+                  ]}
+                  typeSpeed={50}
+                  backSpeed={20}
+                  loop
+                  className="text-typing"
+                  style={{
+                    fontSize: isSmallScreen ? "20px" : "2rem",
+                    padding: "1rem",
+                  }}
                 />
-              </Grid>
-            </Hidden>
+              </span>
+            </div>
+            <Btn />
           </Grid>
-        </Container>
-      </header>
-    </>
+          <Hidden lgDown>
+            <Grid item xs={12} md={6} lg={6} sx={{ marginTop: "-5rem" }}>
+              <img
+                src={landing}
+                style={{ maxWidth: "100%", height: "auto" }}
+                alt="Landing"
+              />
+            </Grid>
+          </Hidden>
+        </Grid>
+      </Container>
+    </header>
   );
 };
 
-export default Header;
+export default HeaderSection;
