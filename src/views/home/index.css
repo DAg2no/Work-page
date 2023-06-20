@@ -11,6 +11,9 @@ body.light h1 {
 body.light .text-typing {
   color: #101010;
 }
+body.light h2 {
+  color: #101010;
+}
 
 /* ----------switch ----------- */
 .switch {
