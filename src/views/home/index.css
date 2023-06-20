@@ -88,8 +88,9 @@ h1 {
   font-weight: lighter;
   font-size: 2.2rem;
 }
-.grid-component body .light h2 {
-  color: #101010;
+
+.box-border {
+  border-radius: 3rem;
 }
 
 @font-face {

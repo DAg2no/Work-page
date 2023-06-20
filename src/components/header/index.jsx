@@ -14,11 +14,11 @@ const Header = () => {
   useEffect(() => {}, []);
 
   return (
-    <>
-      <header className="header-container" id="header">
-        <NavBar />
-        <Container fixed>
-          <Grid container justifyContent="center" alignItems="center" style={{ marginTop: "15rem" }}>
+    <><NavBar />
+      <header id="header">
+        
+        <Container  display="flex" justifyContent="flex-center" alignItems="flex-center" sx={{height: "70rem"}}>
+          <Grid container>
             <Grid item xs={11} md={8} lg={6} xl={6}>
               <Typography
                 variant="h1"
