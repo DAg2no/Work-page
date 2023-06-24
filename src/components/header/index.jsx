@@ -20,7 +20,7 @@ const HeaderSection = () => {
           display: "flex",
           justifyContent: "center",
           alignItems: "center",
-          minHeight: "70rem",
+          minHeight: isSmallScreen ? "40rem" : "60rem",
         }}
       >
         <Grid container>
