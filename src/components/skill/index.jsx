@@ -12,21 +12,35 @@ import Stack from "@mui/material/Stack";
 import Avatar from "@mui/material/Avatar";
 import { blue, deepPurple, grey, lime, orange } from "@mui/material/colors";
 import Container from "@mui/material/Container";
-import { Grid, Box, Typography } from "@mui/material";
+import { Grid, Box, Typography, Hidden } from "@mui/material";
 
 const SkillSection = () => {
   return (
-    <section>
+    <section style={{ marginTop: "15rem" }}>
       <Container maxWidth="lg">
-        <Grid container spacing={2} direction="column">
+        <Grid container spacing={2}>
           <Grid item xs={12}>
             <Grid container spacing={2} direction="row">
               <Grid item xs={12} sm={6} md={4} textAlign="center" className="grid-component">
-                <Typography variant="h1">Skill</Typography>
-                <img src={skill} alt="skill" style={{ width: "30rem", height: "30rem", marginTop: "-5rem" }} />
+                
+                <Hidden lgDown>
+                  <Typography variant="h1">Skill</Typography>
+                  <img
+                    src={skill}
+                    alt="skill"
+                    style={{ width: "30rem", height: "30rem", marginTop: "-5rem" }}
+                  />
+                </Hidden>
               </Grid>
               <Grid item xs={12} sm={6} md={8} className="grid-component">
-                <Grid container spacing={2} direction="column" textAlign= "end">
+                {/* Skills Icon */}
+                <Grid
+                  container
+                  spacing={2}
+                  direction="column"
+                  textAlign={{xs: 'cemter', sm: 'flex-end'}}
+                  alignItems={{xs: 'center', sm: 'flex-end'}}
+                >
                   <Grid item>
                     <Box>
                       <Typography variant="h2">Language know</Typography>
@@ -127,6 +141,7 @@ const SkillSection = () => {
                     </Box>
                   </Grid>
                 </Grid>
+                {/* Skills icon */}
               </Grid>
             </Grid>
           </Grid>

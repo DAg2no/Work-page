@@ -96,10 +96,6 @@ h1 {
   font-size: 4rem;
 }
 
-.box-border {
-  border-radius: 3rem;
-}
-
 @font-face {
   font-family: "open sans";
   src: url("../../../public/OpenSans-Italic-VariableFont_wdth,wght.ttf") format("truetype");
