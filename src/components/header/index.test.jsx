@@ -1,47 +1,27 @@
 import React from "react";
-import { shallow } from "enzyme";
-import Header from "./Header";
-import NavBar from "../../components/navbar";
-import Btn from "../btn";
+import { render } from "@testing-library/react";
+import HeaderSection from "./HeaderSection";
 
-describe("Header Component", () => {
-  let wrapper;
-  
-  beforeEach(() => {
-    wrapper = shallow(<Header />);
+describe("HeaderSection", () => {
+  test("renders heading correctly", () => {
+    const { getByText } = render(<HeaderSection />);
+    expect(getByText("Hi, I'm Daniel")).toBeInTheDocument();
   });
-  
-  it("renders without crashing", () => {
-    expect(wrapper.exists()).toBe(true);
+
+  test("renders typing animation correctly", () => {
+    const { getByText } = render(<HeaderSection />);
+    expect(getByText("beginner development")).toBeInTheDocument();
+    expect(getByText("frontend developer")).toBeInTheDocument();
+    expect(getByText("student in frontend")).toBeInTheDocument();
   });
-  
-  it("contains a NavBar component", () => {
-    expect(wrapper.containsMatchingElement(<NavBar />)).toBe(true);
+
+  test("renders button component correctly", () => {
+    const { getByText } = render(<HeaderSection />);
+    expect(getByText("Button Text")).toBeInTheDocument(); 
   });
-  
-  it("contains a Btn component", () => {
-    expect(wrapper.containsMatchingElement(<Btn />)).toBe(true);
-  });
-  
-  it("contains a Typography component with 'hi, i'm daniel' text", () => {
-    expect(wrapper.find(Typography).contains("hi, i'm daniel")).toBe(true);
-  });
-  
-  it("contains a Typed component with 'beginner development', 'frontend developer' and 'student in frontend' strings", () => {
-    expect(wrapper.find(Typed).prop("strings")).toEqual([
-      "beginner development",
-      "frontend developer",
-      "student in frontend",
-    ]);
-  });
-  
-  it("does not show landing image on small screens", () => {
-    expect(wrapper.find({ smDown: true }).exists()).toBe(true);
-    expect(wrapper.find({ md: 7 }).exists()).toBe(false);
-  });
-  
-  it("shows landing image on medium and larger screens", () => {
-    expect(wrapper.find({ md: 7 }).exists()).toBe(true);
-    expect(wrapper.find({ smDown: true }).exists()).toBe(false);
+
+  test("renders image correctly", () => {
+    const { getByAltText } = render(<HeaderSection />);
+    expect(getByAltText("Landing")).toBeInTheDocument();
   });
 });
