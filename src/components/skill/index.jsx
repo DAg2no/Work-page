@@ -1,5 +1,4 @@
 import React from "react";
-/* img-css */
 import html from "../../../public/html.png";
 import css from "../../../public/css.png";
 import js from "../../../public/js.png";
@@ -7,7 +6,6 @@ import react from "../../../public/react.svg";
 import bootstrap from "../../../public/bootstrap.svg";
 import Mui from "../../../public/mui.svg";
 import skill from "../../../public/skill.png";
-/* img-css */
 import Stack from "@mui/material/Stack";
 import Avatar from "@mui/material/Avatar";
 import { blue, deepPurple, grey, lime, orange } from "@mui/material/colors";
@@ -21,8 +19,7 @@ const SkillSection = () => {
         <Grid container spacing={2}>
           <Grid item xs={12}>
             <Grid container spacing={2} direction="row">
-              <Grid item xs={12} sm={6} md={4} textAlign="center" className="grid-component">
-                
+              <Grid item xs={12} sm={8} md={4} textAlign="center" className="grid-component">
                 <Hidden lgDown>
                   <Typography variant="h1">Skill</Typography>
                   <img
@@ -33,13 +30,12 @@ const SkillSection = () => {
                 </Hidden>
               </Grid>
               <Grid item xs={12} sm={6} md={8} className="grid-component">
-                {/* Skills Icon */}
                 <Grid
                   container
                   spacing={2}
                   direction="column"
-                  textAlign={{xs: 'cemter', sm: 'flex-end'}}
-                  alignItems={{xs: 'center', sm: 'flex-end'}}
+                  textAlign={{ xs: "center", md: "center", lg: "end" }}
+                  alignItems={{ xs: "center", md: "center", lg: "end" }}
                 >
                   <Grid item>
                     <Box>
@@ -47,101 +43,66 @@ const SkillSection = () => {
                       <Stack
                         direction="row"
                         spacing={1}
-                        display="flex"
-                        justifyContent="flex-end"
-                        alignItems="flex-end"
+                        justifyContent={{ xs: "center", lg: "flex-end" }}
+                        alignItems="center"
                         marginTop={2}
                         marginBottom={4}
                       >
-                        <Avatar
-                          sx={{ bgcolor: lime[50], width: 50, height: 52 }}
-                          variant="rounded"
-                        >
+                        <Avatar sx={{ bgcolor: lime[50], width: 50, height: 52 }} variant="rounded">
                           <img src={js} alt="JS" width="36rem" />
                         </Avatar>
-                        <Avatar
-                          sx={{ bgcolor: orange[500], width: 50, height: 52 }}
-                          variant="rounded"
-                        >
+                        <Avatar sx={{ bgcolor: orange[500], width: 50, height: 52 }} variant="rounded">
                           <img src={html} alt="HTML" width="36rem" />
                         </Avatar>
-                        <Avatar
-                          sx={{ bgcolor: blue[500], width: 50, height: 52 }}
-                          variant="rounded"
-                        >
+                        <Avatar sx={{ bgcolor: blue[500], width: 50, height: 52 }} variant="rounded">
                           <img src={css} alt="CSS" width="36rem" />
                         </Avatar>
                       </Stack>
                     </Box>
                   </Grid>
+
                   <Grid item>
                     <Box>
                       <Typography variant="h2">Frontend</Typography>
                       <Stack
                         direction="row"
                         spacing={1}
-                        display="flex"
-                        justifyContent="flex-end"
-                        alignItems="flex-end"
+                        justifyContent={{ xs: "center", lg: "flex-end" }}
+                        alignItems="center"
                         marginTop={2}
                         marginBottom={4}
                       >
-                        <Avatar
-                          sx={{ bgcolor: lime[50], width: 50, height: 52 }}
-                          variant="rounded"
-                        >
-                          <img src={Mui} alt="Mui" width="36rem" />
+                        <Avatar sx={{ bgcolor: lime[50], width: 50, height: 52 }} variant="rounded">
+                          <img src={react} alt="React" width="36rem" />
                         </Avatar>
-                        <Avatar
-                          sx={{ bgcolor: grey[800], width: 50, height: 52 }}
-                          variant="rounded"
-                        >
-                          <img src={react} alt="react" width="36rem" />
+                        <Avatar sx={{ bgcolor: orange[500], width: 50, height: 52 }} variant="rounded">
+                          <img src={bootstrap} alt="Bootstrap" width="36rem" />
                         </Avatar>
-                        <Avatar
-                          sx={{ bgcolor: deepPurple[400], width: 50, height: 52 }}
-                          variant="rounded"
-                        >
-                          <img src={bootstrap} alt="bootstrap" width="36rem" />
+                        <Avatar sx={{ bgcolor: blue[500], width: 50, height: 52 }} variant="rounded">
+                          <img src={Mui} alt="Material-UI" width="36rem" />
                         </Avatar>
                       </Stack>
                     </Box>
                   </Grid>
+
                   <Grid item>
                     <Box>
-                      <Typography variant="h2">Language know</Typography>
+                      <Typography variant="h2">Backend, Database and Cloud</Typography>
                       <Stack
                         direction="row"
                         spacing={1}
-                        display="flex"
-                        justifyContent="flex-end"
-                        alignItems="flex-end"
+                        justifyContent={{ xs: "center", lg: "flex-end" }}
+                        alignItems="center"
                         marginTop={2}
                         marginBottom={4}
                       >
-                        <Avatar
-                          sx={{ bgcolor: lime[50], width: 50, height: 52 }}
-                          variant="rounded"
-                        >
+                        <Avatar sx={{ bgcolor: grey[500], width: 50, height: 52 }} variant="rounded">
                           <img src={js} alt="JS" width="36rem" />
-                        </Avatar>
-                        <Avatar
-                          sx={{ bgcolor: orange[500], width: 50, height: 52 }}
-                          variant="rounded"
-                        >
-                          <img src={html} alt="HTML" width="36rem" />
-                        </Avatar>
-                        <Avatar
-                          sx={{ bgcolor: blue[500], width: 50, height: 52 }}
-                          variant="rounded"
-                        >
-                          <img src={css} alt="CSS" width="36rem" />
                         </Avatar>
                       </Stack>
                     </Box>
                   </Grid>
                 </Grid>
-                {/* Skills icon */}
               </Grid>
             </Grid>
           </Grid>
