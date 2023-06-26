@@ -34,8 +34,8 @@ const SkillSection = () => {
                   container
                   spacing={2}
                   direction="column"
-                  textAlign={{ xs: "center", md: "center", lg: "end" }}
-                  alignItems={{ xs: "center", md: "center", lg: "end" }}
+                  textAlign={{   xs: "center", sm: "center", md: "flex-end", lg: "flex-end"  }}
+                  alignItems={{   xs: "center", sm: "center", md: "flex-end", lg: "flex-end"  }}
                 >
                   <Grid item>
                     <Box>
@@ -43,7 +43,7 @@ const SkillSection = () => {
                       <Stack
                         direction="row"
                         spacing={1}
-                        justifyContent={{ xs: "center", lg: "flex-end" }}
+                        justifyContent={{   xs: "center", sm: "center", md: "flex-end", lg: "flex-end"  }}
                         alignItems="center"
                         marginTop={2}
                         marginBottom={4}
@@ -67,7 +67,7 @@ const SkillSection = () => {
                       <Stack
                         direction="row"
                         spacing={1}
-                        justifyContent={{ xs: "center", lg: "flex-end" }}
+                        justifyContent={{  xs: "center", sm: "center", md: "flex-end", lg: "flex-end" }}
                         alignItems="center"
                         marginTop={2}
                         marginBottom={4}
@@ -91,7 +91,7 @@ const SkillSection = () => {
                       <Stack
                         direction="row"
                         spacing={1}
-                        justifyContent={{ xs: "center", lg: "flex-end" }}
+                        justifyContent={{  xs: "center", sm: "center", md: "flex-end", lg: "flex-end" }}
                         alignItems="center"
                         marginTop={2}
                         marginBottom={4}
