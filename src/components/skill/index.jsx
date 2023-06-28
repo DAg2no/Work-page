@@ -75,10 +75,10 @@ const SkillSection = () => {
                         <Avatar sx={{ bgcolor: lime[50], width: 50, height: 52 }} variant="rounded">
                           <img src={react} alt="React" width="36rem" />
                         </Avatar>
-                        <Avatar sx={{ bgcolor: orange[500], width: 50, height: 52 }} variant="rounded">
+                        <Avatar sx={{ bgcolor: deepPurple[400], width: 50, height: 52 }} variant="rounded">
                           <img src={bootstrap} alt="Bootstrap" width="36rem" />
                         </Avatar>
-                        <Avatar sx={{ bgcolor: blue[500], width: 50, height: 52 }} variant="rounded">
+                        <Avatar sx={{ bgcolor: blue[600], width: 50, height: 52 }} variant="rounded">
                           <img src={Mui} alt="Material-UI" width="36rem" />
                         </Avatar>
                       </Stack>
