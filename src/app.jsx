@@ -6,6 +6,7 @@ import Home from "./views/home";
 const App = () => {
     return (
         <Fragment>
+            
             <Home/>
         </Fragment>
     );
