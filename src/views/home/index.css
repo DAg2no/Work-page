@@ -96,6 +96,10 @@ h1 {
   font-size: 4rem;
 }
 
+.text-project h2 {
+  color: #f5f3f3;
+}
+
 @font-face {
   font-family: "open sans";
   src: url("../../../public/OpenSans-Italic-VariableFont_wdth,wght.ttf") format("truetype");
