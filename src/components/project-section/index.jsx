@@ -20,10 +20,13 @@ const Project = () => {
         justifyContent="center"
         alignItems="center"
         alignContent="center"
-        xs={10}
+        xs={12}
+        lg={6}
       >
+                {/* img Projects */}
+                
         <Hidden lgDown>
-          <Grid item lg={6}>
+          <Grid item lg={6} alignContent="center" justifyContent="center">
             <Typography variant="h2" className="text-project" textAlign="center">
               Project
             </Typography>
