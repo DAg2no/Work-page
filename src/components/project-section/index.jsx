@@ -1,38 +1,40 @@
 import React from "react";
+import {
+  Grid,
+  Card,
+  CardContent,
+  CardActionArea,
+  Typography,
+  Hidden,
+  Box,
+  Stack,
+  Chip,
+} from "@mui/material";
 import projects from "../../../public/projects.svg";
-import Grid from "@mui/material/Grid";
-import Card from "@mui/material/Card";
-import CardContent from "@mui/material/CardContent";
-import { CardActionArea, Typography, Hidden } from "@mui/material";
-import Stack from "@mui/material/Stack";
-import Chip from "@mui/material/Chip";
-import Box from "@mui/material/Box";
-import '../../views/home/index.css'
+import "../../views/home/index.css";
 
-const card = () => {};
-
-const Project = () => {
+const ProjectCard = () => {
   return (
-    <>
+    <React.Fragment>
       <Grid
         container
         direction="row-reverse"
         justifyContent="center"
         alignItems="center"
         alignContent="center"
-        xs={12}
-        lg={6}
+        xs={10}
       >
-                {/* img Projects */}
-                
         <Hidden lgDown>
-          <Grid item lg={6} alignContent="center" justifyContent="center">
-            <Typography variant="h2" className="text-project" textAlign="center">
+          <Grid item lg={6} xs={12} align="center">
+            <Typography variant="h2" className="text-project">
               Project
             </Typography>
-            <img src={projects} width={500} />
+            <Box>
+              <img src={projects} width={500} style={{marginLeft: "10rem"}} alt="Projects" />
+            </Box>
           </Grid>
         </Hidden>
+
         <Grid
           container
           xs={12}
@@ -43,66 +45,47 @@ const Project = () => {
           alignItems="center"
           alignContent="center"
         >
-          <Grid item xs={12} sm={6}>
-            <Card sx={{ maxWidth: "100%" }}>
-              <CardActionArea>
-                <CardContent>
-                  <Typography variant="h5">password-generator</Typography>
-                  <Stack direction="row" spacing={1} marginTop={12}>
-                    <Chip label="HTML" />
-                    <Chip label="JS" />
-                    <Chip label="CSS" />
-                  </Stack>
-                </CardContent>
-              </CardActionArea>
-            </Card>
-          </Grid>
-          <Grid item xs={12} sm={6}>
-            <Card sx={{ maxWidth: "100%" }}>
-              <CardActionArea>
-                <CardContent>
-                  <Typography variant="h5">password-generator</Typography>
-                  <Stack direction="row" spacing={1} marginTop={12}>
-                    <Chip label="HTML" />
-                    <Chip label="JS" />
-                    <Chip label="CSS" />
-                  </Stack>
-                </CardContent>
-              </CardActionArea>
-            </Card>
-          </Grid>
-          <Grid item xs={12} sm={6}>
-            <Card sx={{ maxWidth: "100%" }}>
-              <CardActionArea>
-                <CardContent>
-                  <Typography variant="h5">password-generator</Typography>
-                  <Stack direction="row" spacing={1} marginTop={12}>
-                    <Chip label="HTML" />
-                    <Chip label="JS" />
-                    <Chip label="CSS" />
-                  </Stack>
-                </CardContent>
-              </CardActionArea>
-            </Card>
-          </Grid>
-          <Grid item xs={12} sm={6}>
-            <Card sx={{ maxWidth: "100%" }}>
-              <CardActionArea>
-                <CardContent>
-                  <Typography variant="h5">password-generator</Typography>
-                  <Stack direction="row" spacing={1} marginTop={12}>
-                    <Chip label="HTML" />
-                    <Chip label="JS" />
-                    <Chip label="CSS" />
-                  </Stack>
-                </CardContent>
-              </CardActionArea>
-            </Card>
-          </Grid>
+          {[1, 2].map((index) => (
+            <>
+              <Grid item xs={12} sm={6} key={index}>
+                <Card sx={{ maxWidth: "100%", maxHeight: "100%" }}>
+                  <CardActionArea
+                    href="https://github.com/DAg2no/password-generator"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    area-disabled="false"
+                  >
+                    <CardContent>
+                      <Typography variant="h5">password-generator</Typography>
+                      <Stack direction="row" spacing={1} marginTop={6}>
+                        <Chip label="HTML" />
+                        <Chip label="JS" />
+                        <Chip label="CSS" />
+                      </Stack>
+                    </CardContent>
+                  </CardActionArea>
+                </Card>
+              </Grid>
+              <Grid item xs={12} sm={6} key={index}>
+                <Card sx={{ maxWidth: "100%", maxHeight: "100%" }}>
+                  <CardActionArea>
+                    <CardContent>
+                      <Typography variant="h5">hola</Typography>
+                      <Stack direction="row" spacing={1} marginTop={6}>
+                        <Chip label="HTML" />
+                        <Chip label="JS" />
+                        <Chip label="CSS" />
+                      </Stack>
+                    </CardContent>
+                  </CardActionArea>
+                </Card>
+              </Grid>
+            </>
+          ))}
         </Grid>
       </Grid>
-    </>
+    </React.Fragment>
   );
 };
 
-export default Project;
+export default ProjectCard;

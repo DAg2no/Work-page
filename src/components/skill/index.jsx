@@ -35,6 +35,7 @@ const SkillSection = () => {
                     width: "30rem",
                     height: "30rem",
                     marginTop: "-5rem",
+                    
                   }}
                 />
               </Hidden>
